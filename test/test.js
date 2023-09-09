@@ -4,7 +4,7 @@
  */
 let assert, expect;
 let testItems = {};
-
+/** 
 let primesCollection = [
   {
     artist: 'Hiroshi Yoshimura',
@@ -32,6 +32,9 @@ let primesCollection = [
     yearPublished: 2002
   },
 ];
+*/
+
+
 
 if (typeof window === 'object') {
     // Run tests in the browser
