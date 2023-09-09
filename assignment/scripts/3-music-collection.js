@@ -35,21 +35,21 @@ let myCollection = [];
 
 function addToCollection(collection, title, artist, yearPublished) {
         if (collection === myCollection) {
-          let album1 = {
+          let album = {
             title: title,
             artist: artist,
             yearPublished: yearPublished
           };
-          myCollection.push(album1);
-          return album1;
+          myCollection.push(album);
+          return album;
         } else if (collection === primesCollection) {
-          let album1 = {
+          let album = {
             title: title,
             artist: artist,
             yearPublished: yearPublished
           };
-          primesCollection.push(album1);
-          return album1;
+          primesCollection.push(album);
+          return album;
         }
 }
 console.log(addToCollection(myCollection, "Rumours", "Fleetwood Mac", 1977));
@@ -75,6 +75,55 @@ function showCollection(collection){
 }
 console.log(showCollection(myCollection));
 
+
+
+
+
+
+
+let matchingResults = [];
+function findByArtist(collection, artist){
+    if (collection === myCollection) {
+        for (let album of collection) {
+          if (`${album.artist}` === artist) {
+            matchingResults.push(album);
+            console.log(matchingResults);
+            return matchingResults;
+          } else {
+            return matchingResults;
+          }
+      }
+    } else if (collection === primesCollection) {
+        for (let album of collection) {
+          if (`${album.artist}` === artist) {
+            matchingResults.push(album);
+            console.log(matchingResults);
+            return matchingResults;
+          } else {
+            return matchingResults;
+          }
+        }
+    }
+}
+console.log(findByArtist(myCollection, "Tori Amos"));
+
+
+
+
+
+
+/** 
+let matchingResults = [];
+function findByArtist(collection, artist) {
+      if (collection === myCollection) {
+        for ()
+      }
+
+
+}
+  
+console.log(findByArtist(myCollection, "Tori Amos"));
+*/
 
 
 
