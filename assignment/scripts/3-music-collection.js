@@ -72,58 +72,26 @@ function showCollection(collection){
     for (let album of collection) {
       console.log(`${album.title}` + ' by ' + `${album.artist}` + ' published in ' + `${album.yearPublished}`);
     }
+    return collection;
 }
 console.log(showCollection(myCollection));
 
 
 
 
-
-
-
-let matchingResults = [];
-function findByArtist(collection, artist){
-    if (collection === myCollection) {
-        for (let album of collection) {
-          if (`${album.artist}` === artist) {
-            matchingResults.push(album);
-            console.log(matchingResults);
-            return matchingResults;
-          } else {
-            return matchingResults;
-          }
-      }
-    } else if (collection === primesCollection) {
-        for (let album of collection) {
-          if (`${album.artist}` === artist) {
-            matchingResults.push(album);
-            console.log(matchingResults);
-            return matchingResults;
-          } else {
-            return matchingResults;
-          }
-        }
-    }
-}
-console.log(findByArtist(myCollection, "Tori Amos"));
-
-
-
-
-
-
-/** 
-let matchingResults = [];
 function findByArtist(collection, artist) {
-      if (collection === myCollection) {
-        for ()
+      let matchingResults = [];
+        for (let album of collection) {
+          if (`${album.artist}` === artist) {
+            matchingResults.push(album);
+          }   
       }
-
-
+     return matchingResults; 
 }
-  
+console.log(findByArtist(primesCollection, "Wilco"));
+console.log(findByArtist(primesCollection, "Celine Dion"));
 console.log(findByArtist(myCollection, "Tori Amos"));
-*/
+console.log(findByArtist(myCollection, "Haim"));
 
 
 
