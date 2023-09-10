@@ -60,7 +60,7 @@ console.log(addToCollection(myCollection, "The Shepherd's Dog", "Iron & Wine", 2
 console.log(myCollection);
 console.log(addToCollection(myCollection, "Random Access Memories", "Daft Punk", 2013));
 console.log(myCollection);
-console.log(addToCollection(myCollection, "Tusk", "Fleetwood Mac", 1977));
+console.log(addToCollection(myCollection, "Tusk", "Fleetwood Mac", 1979));
 console.log(myCollection);
 console.log(addToCollection(myCollection, "Brothers", "The Black Keys", 2010));
 console.log(myCollection);
@@ -100,7 +100,7 @@ console.log(findByArtist(myCollection, "Haim"));
 
 //STRETCH GOALS
 
-
+/**
 function search(collection, searchCriteria) {
       let newArray = [];
       for (let album of collection) {
@@ -113,7 +113,7 @@ function search(collection, searchCriteria) {
 }
 search(myCollection, "artist: 'Tori Amos', yearPublished: 1999");
 
-
+*/
 
 
 
