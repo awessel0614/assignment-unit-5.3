@@ -60,7 +60,7 @@ console.log(addToCollection(myCollection, "The Shepherd's Dog", "Iron & Wine", 2
 console.log(myCollection);
 console.log(addToCollection(myCollection, "Random Access Memories", "Daft Punk", 2013));
 console.log(myCollection);
-console.log(addToCollection(myCollection, "Rumours", "Fleetwood Mac", 1977));
+console.log(addToCollection(myCollection, "Tusk", "Fleetwood Mac", 1977));
 console.log(myCollection);
 console.log(addToCollection(myCollection, "Brothers", "The Black Keys", 2010));
 console.log(myCollection);
@@ -91,8 +91,27 @@ function findByArtist(collection, artist) {
 console.log(findByArtist(primesCollection, "Wilco"));
 console.log(findByArtist(primesCollection, "Celine Dion"));
 console.log(findByArtist(myCollection, "Tori Amos"));
+console.log(findByArtist(myCollection, "Fleetwood Mac"));
 console.log(findByArtist(myCollection, "Haim"));
 
+
+
+
+
+//STRETCH GOALS
+
+
+function search(collection, searchCriteria) {
+      let newArray = [];
+      for (let album of collection) {
+          if(searchCriteria === )
+      }
+
+
+
+
+}
+search(myCollection, "artist: 'Tori Amos', yearPublished: 1999");
 
 
 
