@@ -98,22 +98,9 @@ console.log(findByArtist(myCollection, "Haim"));
 
 
 
-//STRETCH GOALS
-
-/**
-function search(collection, searchCriteria) {
-      let newArray = [];
-      for (let album of collection) {
-          if(searchCriteria === )
-      }
 
 
 
-
-}
-search(myCollection, "artist: 'Tori Amos', yearPublished: 1999");
-
-*/
 
 
 
